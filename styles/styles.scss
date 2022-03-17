@@ -1,0 +1,36 @@
+@import "./_variables.scss";
+
+* {
+    font-family: 'muli';
+}
+
+body {
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-auto-rows: minmax(80px, auto);
+    grid-column-gap: 1.5em;
+    grid-row-gap: 2em;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.grid-item-1 {
+    grid-column: span 4;
+}
+
+.grid-item {
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 1em;
+    box-shadow: 0 6px 15px rgb(36 37 38 / 8%);
+    overflow: hidden;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+        &:hover {
+            box-shadow: 5px 12px 20px rgb(36 37 38 / 13%);
+        }
+}

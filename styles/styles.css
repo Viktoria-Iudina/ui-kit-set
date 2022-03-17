@@ -1,0 +1,46 @@
+* {
+  font-family: "muli";
+}
+
+body {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#dfe9f3), to(white));
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 1.5em 20% 1.5em 20% 1.5em 20%;
+  grid-template-columns: repeat(4, 20%);
+  grid-auto-rows: minmax(80px, auto);
+  grid-column-gap: 1.5em;
+  grid-row-gap: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100vh;
+}
+
+.grid-item-1 {
+  -ms-grid-column-span: 4;
+  grid-column: span 4;
+}
+
+.grid-item {
+  background-color: #FFF;
+  border-radius: 5px;
+  padding: 1em;
+  -webkit-box-shadow: 0 6px 15px rgba(36, 37, 38, 0.08);
+          box-shadow: 0 6px 15px rgba(36, 37, 38, 0.08);
+  overflow: hidden;
+  -webkit-transition: -webkit-box-shadow 0.25s ease, -webkit-transform 0.25s ease;
+  transition: -webkit-box-shadow 0.25s ease, -webkit-transform 0.25s ease;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  transition: box-shadow 0.25s ease, transform 0.25s ease, -webkit-box-shadow 0.25s ease, -webkit-transform 0.25s ease;
+}
+.grid-item:hover {
+  -webkit-box-shadow: 5px 12px 20px rgba(36, 37, 38, 0.13);
+          box-shadow: 5px 12px 20px rgba(36, 37, 38, 0.13);
+}
