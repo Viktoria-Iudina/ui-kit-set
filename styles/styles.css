@@ -10,8 +10,8 @@ body {
 .grid-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 1.5em 20% 1.5em 20% 1.5em 20%;
-  grid-template-columns: repeat(4, 20%);
+  -ms-grid-columns: 26% 1.5em 26% 1.5em 26%;
+  grid-template-columns: repeat(3, 26%);
   grid-auto-rows: minmax(80px, auto);
   grid-column-gap: 1.5em;
   grid-row-gap: 2em;
@@ -21,11 +21,6 @@ body {
   -ms-flex-line-pack: center;
       align-content: center;
   height: 100vh;
-}
-
-.grid-item-1 {
-  -ms-grid-column-span: 4;
-  grid-column: span 4;
 }
 
 .grid-item {
@@ -43,4 +38,16 @@ body {
 .grid-item:hover {
   -webkit-box-shadow: 5px 12px 20px rgba(36, 37, 38, 0.13);
           box-shadow: 5px 12px 20px rgba(36, 37, 38, 0.13);
+}
+
+.header {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.footer {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
 }

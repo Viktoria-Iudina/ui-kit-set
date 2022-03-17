@@ -10,17 +10,13 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 20%);
+    grid-template-columns: repeat(3, 26%);
     grid-auto-rows: minmax(80px, auto);
     grid-column-gap: 1.5em;
     grid-row-gap: 2em;
     justify-content: center;
     align-content: center;
     height: 100vh;
-}
-
-.grid-item-1 {
-    grid-column: span 4;
 }
 
 .grid-item {
@@ -33,4 +29,11 @@ body {
         &:hover {
             box-shadow: 5px 12px 20px rgb(36 37 38 / 13%);
         }
+}
+
+.header {
+  grid-column: 1 / 4;
+}
+.footer {
+    grid-column: 1 / 4;
 }
