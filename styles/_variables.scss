@@ -1,3 +1,17 @@
 $primaryColor: #323232;
+$secondaryColor: #ed145b;
+$secondaryColorBtnHover: #ef4670;
 
-
+@mixin btnFilter {
+    background-color: $secondaryColor;
+    border-radius: 7px;
+    color: #fff;
+    margin: 0 0.2em;
+    padding: 0.3em 0.7em;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+    &:hover {
+        background-color: $secondaryColorBtnHover;
+        box-shadow: 5px 12px 20px rgba(188, 36, 104, 0.13);
+    }
+}
