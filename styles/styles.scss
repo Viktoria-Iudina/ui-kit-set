@@ -46,6 +46,14 @@ body {
   @include btnFilter;
 }
 
+.active {
+  background-color: $primaryColor;
+}
+.active:hover {
+  background-color: $primaryColorBtnHover;
+  box-shadow: 5px 12px 20px rgba(77, 89, 101, 0.13);
+}
+
 @media screen and (max-width: 1024px) {
   .grid-container {
     display: grid;

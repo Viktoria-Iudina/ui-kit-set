@@ -71,6 +71,16 @@ body {
           box-shadow: 5px 12px 20px rgba(188, 36, 104, 0.13);
 }
 
+.active {
+  background-color: #323232;
+}
+
+.active:hover {
+  background-color: #424141;
+  -webkit-box-shadow: 5px 12px 20px rgba(77, 89, 101, 0.13);
+          box-shadow: 5px 12px 20px rgba(77, 89, 101, 0.13);
+}
+
 @media screen and (max-width: 1024px) {
   .grid-container {
     display: -ms-grid;
